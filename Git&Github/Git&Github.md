@@ -3,6 +3,7 @@
 ## 基础概念
 
 **Git (工具)**: 一个运行在你本地电脑上的版本控制系统。
+
 **GitHub (平台)**: 一个基于 Git 的代码托管云平台，让你可以把本地的 Git 仓库同步到云端，方便备份和团队协作。
 
 国内外还有很多类似的基于git的代码托管平台：GitLab、Bitbucket、Gitee (码云)、CODING (腾讯)、Codeup(阿里云 云效)、GitCode(CSDN)
@@ -81,6 +82,13 @@ graph TD
 
 - 从云端下载：拿到 GitHub 上的链接，输入 git clone <仓库链接>，把整个项目下载到本地工作区。
   - 仓库链接：进入仓库主页 -> 点击 ` <> Code ` -> 在 Local 下选择 SSH，直接点击右侧复制按钮即可复制链接。
+* 注：首次使用ssh时候会有一个安全性提示：
+  ```
+    The authenticity of host 'github.com (192.30.252.1)' can't be established.
+    ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+    Are you sure you want to continue connecting (yes/no/[fingerprint])?
+  ```
+  直接输入`yes`
 
 ### 查看项目状态
 ```
